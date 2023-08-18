@@ -1,12 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Contact } from './pages/Contact';
 import { Home } from './pages/Home';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { Notfound } from './pages/Notfound';
 
 function App() {
   return (
-    <div>
-      <Home/>
+    <div className='container mt-5'>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
