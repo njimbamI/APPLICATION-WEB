@@ -7,7 +7,10 @@ import {
   Route,
 } from "react-router-dom";
 import { Notfound } from './pages/Notfound';
-import { Login } from './pages/Login';
+import { Registrer } from './pages/Registrer';
+
+
+
 
 function App() {
   return (
@@ -16,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact/>} />
-          <Route path="login" element={<Login />} />
+          <Route path="inscription" element={<Registrer />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>
