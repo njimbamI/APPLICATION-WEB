@@ -9,6 +9,7 @@ export const Navigation = () => {
             <nav className='flex justify-end'>
                 <Link className='mr-3' to="/" > Accueil </Link>
                 <Link className='mr-3' to="/ressources"> Ressources</Link>
+                <Link className='mr-3' to="/login">Login</Link>
                 <Link to="/contact"> contact</Link>
             </nav>
         </div>

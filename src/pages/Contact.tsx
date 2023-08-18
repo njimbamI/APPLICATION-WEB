@@ -46,9 +46,9 @@ export const Contact = () => {
         <div>
             <Navigation />
             <h1 className='text-3xl text-center font-extrabold'>CONTACTEZ NOUS</h1>
-            <div className='flex item center'>
+            <div className='flex item-center'>
                 <div className='w-2/3 pt-2'>
-                    <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+                    <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 shadow-md rounded-lg">
                         <label className="mb-4">
                             Nom:
                             <input
@@ -84,7 +84,7 @@ export const Contact = () => {
                     </form>
                 </div>
                 <div className='1/3 bg-'>
-                    <img src="images/logo512.png" alt="boloa" />
+                    <img src="images/bolo.jpg" alt="boloa" />
                 </div>
             </div>
         </div>

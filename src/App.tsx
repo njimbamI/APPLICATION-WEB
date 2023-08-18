@@ -7,6 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import { Notfound } from './pages/Notfound';
+import { Login } from './pages/Login';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="contact" element={<Contact/>} />
+          <Route path="login" element={<Login />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>
