@@ -10,7 +10,9 @@ export const Navigation = () => {
                 <Link className='mr-3' to="/" > Accueil </Link>
                 <Link className='mr-3' to="/ressources"> Ressources</Link>
                 <Link className='mr-3' to="/inscription">S'incrire</Link>
+                <Link className='mr-3' to="/connexion">Se connecter</Link>
                 <Link to="/contact"> contact</Link>
+                
             </nav>
         </div>
     )

@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { Notfound } from './pages/Notfound';
 import { Registrer } from './pages/Registrer';
+import { Login } from './pages/Login';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact/>} />
           <Route path="inscription" element={<Registrer />} />
+          <Route path="connexion" element={<Login />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>

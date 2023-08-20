@@ -46,9 +46,9 @@ export const Contact = () => {
         <div>
             <Navigation />
             <h1 className='text-3xl text-center font-extrabold'>CONTACTEZ NOUS</h1>
-            <div className='flex item-center'>
-                <div className='w-2/3 pt-2'>
-                    <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 shadow-md rounded-lg">
+            <div className='flex  h-screen'>
+                <div className='w-2/3 bg-white flex items-center justify-center p-8'>
+                    <form onSubmit={handleSubmit} className="w-full max-w-md ">
                         <label className="mb-4">
                             Nom:
                             <input
@@ -78,12 +78,12 @@ export const Contact = () => {
                                 className="block w-full px-4 py-2 border border-gray-300 rounded"
                             />
                         </label>
-                        <button type="submit" className="px-6 mt-4 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+                        <button type="submit" className="px-6 mt-4 py-3 bg-blue-500 text-white w-full rounded hover:bg-blue-600">
                             Envoyer
                         </button>
                     </form>
                 </div>
-                <div className='1/3 bg-'>
+                <div className='w-1/3 flex items-center justify-center '>
                     <img src="images/bolo.jpg" alt="boloa" />
                 </div>
             </div>

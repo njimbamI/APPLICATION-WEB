@@ -16,13 +16,13 @@ export const Registrer = () => {
         setPassword('');
     };
 
-  return (
-    <div>
+    return (
+        <div>
             <Navigation />
-            <div className='flex items-center'>
-                <div className="flex justify-center items-center h-screen w-2/3">
-                    <form onSubmit={handleSubmit} className="bg-white p-8 shadow-md rounded-lg">
-                        <h2 className="text-2xl font-semibold mb-4">Inscription</h2>
+            <h1 className="text-3xl text-center font-extrabold">INSCRIPTION</h1>
+            <div className="flex h-screen">
+                <div className="w-2/3 bg-white flex items-center justify-center p-8 ">
+                    <form onSubmit={handleSubmit} className="w-full max-w-sm">
                         <div className="mb-4">
                             <label htmlFor="username" className="block text-sm font-medium text-gray-600">
                                 Nom d'utilisateur
@@ -70,10 +70,13 @@ export const Registrer = () => {
                         </button>
                     </form>
                 </div>
-                <div className='w-1/3'>
-                    <img src="images/bolo.jpg" alt="boloa" />
+                <div className="w-1/3 flex items-center justify-center">
+                    {/* Remplacez l'URL de l'image par votre propre image */}
+                    <img
+                       src="images/bolo.jpg" alt="boloa"
+                    />
                 </div>
             </div>
         </div>
-  )
+    )
 }
