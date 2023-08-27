@@ -8,11 +8,10 @@ export const Navigation = () => {
             <img className='w-10' src="images/bolo.jpg" alt="logo" />
             <nav className='flex justify-end'>
                 <Link className='mr-3' to="/" > Accueil </Link>
-                <Link className='mr-3' to="/ressources"> Ressources</Link>
+                <Link className='mr-3' to="/ressource"> Ressource</Link>
                 <Link className='mr-3' to="/inscription">S'incrire</Link>
                 <Link className='mr-3' to="/connexion">Se connecter</Link>
-                <Link to="/contact"> contact</Link>
-                
+                <Link to="/contact"> contact</Link>      
             </nav>
         </div>
     )
