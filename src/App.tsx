@@ -11,6 +11,7 @@ import { Registrer } from './pages/Registrer';
 import { Login } from './pages/Login';
 import { Ressource } from './pages/Ressource';
 import { Detail } from './pages/Detail';
+import { ForgotPassword } from './pages/ForgotPassword';
 
 
 
@@ -22,10 +23,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:id" element={<Detail />} />
-          <Route path="contact" element={<Contact/>} />
+          <Route path="contact" element={<Contact name="" email="" message="" />} />
           <Route path="inscription" element={<Registrer />} />
           <Route path="connexion" element={<Login />} />
           <Route path="ressource" element={<Ressource />} />
+          <Route path="forgot" element={<ForgotPassword />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>

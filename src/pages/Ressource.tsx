@@ -8,9 +8,9 @@ import { Article } from '../interfaces'
 export const Ressource = () => {
   const [articles, setArticles] = useState<Article[] | null>(null);
   const [numberOfPost, setNumberOfPost] = useState<number>(5);
-  
 
-  const localsimple = () => localStorage.getItem('number') ||numberOfPost;
+
+  const localsimple = () => localStorage.getItem('number') || numberOfPost;
   const localnouveau = localsimple();
   useEffect(() => {
     const getposts = async () => {

@@ -9,7 +9,7 @@ export const Login = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Ajoutez ici votre logique de connexion
-    console.log('Données de connexion :', { email, password });
+    //console.log('Données de connexion :', { email, password });
     // Réinitialisez les champs après la connexion
     setEmail('');
     setPassword('');
@@ -18,7 +18,7 @@ export const Login = () => {
     <div>
       <Navigation />
       <h1 className="text-3xl text-center font-extrabold">CONNEXION</h1>
-      <div className="flex h-screen">
+      <div className="flex ">
         <div className="w-2/3 bg-white flex items-center justify-center p-8 ">
           <form onSubmit={handleSubmit} className="w-full max-w-md ">
             <div className="mb-4">
@@ -44,11 +44,11 @@ export const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                className="mt-1 p-2 w-full border border-gray-300 rounded-md "
               />
             </div>
             <div className="mb-4">
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="/forgot" className="text-blue-500 hover:underline">
                 Mot de passe oublié ?
               </a>
             </div>
@@ -56,7 +56,7 @@ export const Login = () => {
               type="submit"
               className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
             >
-              Se connecter
+              Connexion
             </button>
             <div className="text-center mt-4">
               <span className="text-gray-600">Vous n'avez pas de compte ?</span>

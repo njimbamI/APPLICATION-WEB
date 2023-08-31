@@ -9,10 +9,10 @@ type PParams = {
   id: string;
 };
 
-export const Detail  = () => {
-  const {id} = useParams<PParams>();
+export const Detail = () => {
+  const { id } = useParams<PParams>();
   const [first, setFirst] = useState<Article | null>(null);
-  
+
   useEffect(() => {
     const getposts = async () => {
       try {
@@ -27,12 +27,11 @@ export const Detail  = () => {
     getposts();
   }, [id]);
 
-
   return (
     <div>
-      <Navigation/>
-        <h1>Detail DE l'ARTICLE</h1>
-        <DetProduit first= {first}/>
+      <Navigation />
+      <h1>Detail DE l'ARTICLE</h1>
+      <DetProduit first={first} />
     </div>
   )
 }

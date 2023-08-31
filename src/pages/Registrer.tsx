@@ -20,7 +20,7 @@ export const Registrer = () => {
         <div>
             <Navigation />
             <h1 className="text-3xl text-center font-extrabold">INSCRIPTION</h1>
-            <div className="flex h-screen">
+            <div className="flex">
                 <div className="w-2/3 bg-white flex items-center justify-center p-8 ">
                     <form onSubmit={handleSubmit} className="w-full max-w-sm">
                         <div className="mb-4">

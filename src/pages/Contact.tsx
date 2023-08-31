@@ -10,7 +10,7 @@ type formInputs = {
 }
 
 
-export const Contact = () => {
+export const Contact:React.FC<formInputs> = () => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -46,7 +46,7 @@ export const Contact = () => {
         <div>
             <Navigation />
             <h1 className='text-3xl text-center font-extrabold'>CONTACTEZ NOUS</h1>
-            <div className='flex  h-screen'>
+            <div className='flex '>
                 <div className='w-2/3 bg-white flex items-center justify-center p-8'>
                     <form onSubmit={handleSubmit} className="w-full max-w-md ">
                         <label className="mb-4">
